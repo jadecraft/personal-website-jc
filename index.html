@@ -24,11 +24,14 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
+                <div id="comment-icon" class="comment-bubble">
+                    <i class="fa-regular fa-comment"></i>
+                    <div class="bubble-text">
+                        <h1>Hello, I'm Jade Craft!</h1>
+                        <p> An aspiring software engineer.</p>
+                        </div>
+                    </div>
 
-            <div class="header-text">
-                <p>Aspiring Software Engineer</p>
-                <h1>Hello, I'm Jade Craft!</h1>
-            </div>
             </div>
         </div>
     </div>
@@ -110,7 +113,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="expanded-content">
         <i class="fa-solid fa-user-tie"></i>
         <h2>Professional Skills</h2>
         <ul>
@@ -252,5 +255,53 @@ function opentab(tabname) {
       .catch(error => console.error('Error!', error.message))
   })
 </script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const skillBoxes = document.querySelectorAll('.skills-list > div');
+
+  skillBoxes.forEach(box => {
+    box.style.position = 'relative'; // ensure close button can be positioned
+
+    box.addEventListener('click', (e) => {
+      // Prevent toggling if close button clicked
+      if (e.target.classList.contains('close-btn')) return;
+
+      // If already expanded, do nothing
+      if (box.classList.contains('expanded')) return;
+
+      // Close any other expanded box
+      const expanded = document.querySelector('.skills-list div.expanded');
+      if (expanded) {
+        expanded.classList.remove('expanded');
+        const closeBtn = expanded.querySelector('.close-btn');
+        if (closeBtn) closeBtn.remove();
+      }
+
+      // Expand this box
+      box.classList.add('expanded');
+
+      // Add close button if missing
+      let closeBtn = box.querySelector('.close-btn');
+      if (!closeBtn) {
+        closeBtn = document.createElement('button');
+        closeBtn.classList.add('close-btn');
+        closeBtn.innerHTML = '×';
+        box.appendChild(closeBtn);
+
+        // Close on click
+        closeBtn.addEventListener('click', (event) => {
+          event.stopPropagation();
+          box.classList.remove('expanded');
+          closeBtn.remove();
+        });
+      }
+    });
+  });
+});
+
+</script>
+
 </body>
 </html>
