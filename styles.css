@@ -526,7 +526,6 @@ nav .fa-xmark{
     font-size: 30px;
   }
 
-  
   nav .fa-bars {
     display: block;
     font-size: 25px;
@@ -561,7 +560,6 @@ nav .fa-xmark{
     cursor: pointer;
   }
 
-  
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
@@ -589,7 +587,6 @@ nav .fa-xmark{
     margin-right: 10px;
   }
 
-  
   .skills-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -611,12 +608,10 @@ nav .fa-xmark{
     margin-bottom: 10px;
   }
 
-
   .work-list {
     grid-template-columns: 1fr;
   }
 
-  
   .contact-left,
   .contact-right {
     flex-basis: 100%;
@@ -632,7 +627,19 @@ nav .fa-xmark{
     font-size: 14px;
   }
 
- @media only screen and (max-width: 600px) {
+  .bottom-header {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #msg {
+    color: white;
+    margin-top: -40px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .comment-bubble {
     width: 90%;
     max-width: 320px;   
@@ -671,18 +678,5 @@ nav .fa-xmark{
   .bubble-text h1 {
     font-size: 24px;
     margin: 0;
-  }
-}
-
-
-  .bottom-header {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  #msg {
-    color: white;
-    margin-top: -40px;
-    display: block;
   }
 }
