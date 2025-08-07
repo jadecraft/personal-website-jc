@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/31df0a2b2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Personal Portfolio:</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+                <p>Aspiring Software Engineer</p>
+                <h1>Hello, I'm Jade Craft!</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+     <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/image0 (4).jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A passionate and detail-oriented software engineer with a strong interest in building user-focused web applications. Skilled in writing clean, efficient code and solving complex problems with creative solutions. Experienced in both independent projects and team-based collaborations, with a continuous drive to learn new technologies and improve development practices.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    <li><span>2025 - Current</span><br><span>Task Assocaite at Ulta Beauty</span>
+                    <li>- Utilized inventory management systems and handheld devices to track product movement, support restocking, and maintain data accuracy.</li>
+	                <li>- Maintained store compliance with visual merchandising software and digital planograms to align with national marketing rollouts.<li>
+	                <li>- Supported cross-functional coordination with stockroom and online order fulfillment teams, ensuring fast resolution of discrepancies.</li>
+                    </li>
+
+                    <li><span>2021 - 2025</span><br><span>Warehouse Associate at Amazon</span>
+                     <li>- Operated RF scanners and Amazon’s internal software to accurately pick, stow, and process high volumes of inventory.</li>
+	                <li>- Followed standardized procedures in a fast-paced warehouse environment, ensuring consistent safety and quality standards.<li>
+	                <li>- Collaborated with team members and supervisors to meet performance metrics and improve workflow efficiency.</li>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>November 2024 - May 2025</span><br>Software Engineering Bootcamp at Fullstack Academy</li>
+                    <li><span>March 2023 - March 2027</span><br>BS in computer science with a concentration in software engineering at SNHU</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+        <h2>Front-End Development</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Web Design</li>
+          <li>Netlify</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-laptop-code"></i>
+        <h2>Back-End Development</h2>
+        <ul>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>REST APIs</li>
+          <li>Debugging & Troubleshooting</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-user-tie"></i>
+        <h2>Professional Skills</h2>
+        <ul>
+          <li>Adaptability & Fast Learning</li>
+          <li>Attention to Detail</li>
+          <li>Collaborative Problem Solving</li>
+          <li>Communication & Teamwork</li>
+          <li>Strong Work Ethic & Reliability</li>
+          <li>Tools: Git, GitHub, Jest, Slack, Office Suite, Zoom</li>
+          <li>Cross-functional Collaboration</li>
+          <li>Inventory & Data Systems Experience</li>
+        </ul>
+      </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/work-1.png">
+                    <div class="layer">
+                        <h3>Puppy Bowl Project</h3>
+                        <p>This project was completed during my time at Fullstack Academy's Software Engineering Bootcamp. It showcases my ability to build responsive and interactive web applications using core front-end technologies like HTML, CSS, and JavaScript.</p>
+                        <a href="https://glistening-blini-fd3c32.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="/work-2.png">
+                    <div class="layer">
+                        <h3>Book Buddy Project</h3>
+                        <p>A collaborative library app developed during my time at Fullstack Academy’s Software Engineering Bootcamp. BookBuddy allows users to browse, search, and manage a collection of books, integrating JavaScript, React, and Redux for a seamless user experience. This project helped sharpen my skills in frontend state management, RESTful API integration, and responsive design.</p>
+                        <a href="https://relaxed-naiad-1e6d1a.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="/work-3.png">
+                    <div class="layer">
+                        <h3>Puppy Bowl Project</h3>
+                        <p>Designed with a clean and intuitive API, the library enables seamless integration into backend services and applications that interact with SQL databases. It facilitates efficient storage and retrieval of binary data in SQL fields by converting between human-readable formats and compact binary representations. This tool is ideal for projects requiring precise data encoding, decoding, and manipulation at the bit level, ensuring data consistency and integrity across API layers and database operations.</p>
+                        <a href="https://github.com/jadecraft/block-32/blob/main/index.js"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>jadecraft9@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/jade-craft" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jadecraft" ><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="/Resume 2025 SE.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-header">
+            <p>Created by Jade Craft<i class="fa-regular fa-heart"></i></p>
+        </div>
+
+    </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw4ZdP7IPksrCCLCZqqMZ783RUXhxQASEtUqzGKYYC8MxUSAYaKJey-pTQRzRXPRcNK/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msq = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
